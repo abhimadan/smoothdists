@@ -5,6 +5,7 @@ of Smooth Distance Constraints on Co-Dimensional Geometry". It contains the
 source code for the core library, as well as some applications used for sphere
 traced visualizations and rigid body simulations. Please see the source code for
 these applications (in the `app` folder) for examples of how to use the API.
+This code has been tested on macOS and Linux.
 
 [Project Page](https://www.dgp.toronto.edu/projects/smooth-distances/)
 
