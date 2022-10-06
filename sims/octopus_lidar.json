@@ -1,0 +1,42 @@
+{
+  "objects": [
+    {
+      "name": "lidar",
+      "meshes": [
+        {
+          "path": "../data/lidar.obj",
+          "bvh_type": "points"
+        }
+      ],
+      "alpha": 100,
+      "is_dynamic": false,
+      "init_state": {
+        "position": [0,0,0],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]]
+      }
+    },
+    {
+      "name": "octopus",
+      "meshes": [
+        {
+          "path": "../data/octopus.obj",
+          "bvh_type": "faces"
+        }
+      ],
+      "alpha": 1000,
+      "is_dynamic": true,
+      "init_state": {
+        "position": [0,0,0.5],
+        "rotation": [[0,1,0],[-1,0,0],[0,0,1]],
+        "velocity": [0,0,-1],
+        "angular_velocity": [0,0,0]
+      }
+    }
+  ],
+  "gravity": [0,0,-1],
+  "timestep": 0.01,
+  "num_steps": 1000,
+  "beta": 0.5,
+  "use_exact_dist": false,
+  "name": "octopus_lidar"
+}

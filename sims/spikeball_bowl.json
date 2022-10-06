@@ -1,0 +1,46 @@
+{
+  "objects": [
+    {
+      "name": "bowl",
+      "meshes": [
+        {
+          "path": "../data/bowl_edges.obj",
+          "bvh_type": "edges"
+        }
+      ],
+      "alpha": 50,
+      "is_dynamic": false,
+      "init_state": {
+        "position": [0,0,0],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]]
+      }
+    },
+    {
+      "name": "spikeball",
+      "meshes": [
+        {
+          "path": "../data/sphere.obj",
+          "bvh_type": "faces"
+        },
+        {
+          "path": "../data/sphere_spikes.obj",
+          "bvh_type": "edges"
+        }
+      ],
+      "alpha": 20,
+      "is_dynamic": true,
+      "init_state": {
+        "position": [4,2,0],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]],
+        "velocity": [0,-5,0],
+        "angular_velocity": [0,0,0]
+      }
+    }
+  ],
+  "gravity": [0,-1,0],
+  "timestep": 0.001,
+  "num_steps": 6000,
+  "beta": 0.5,
+  "use_exact_dist": false,
+  "name": "spikeball_bowl"
+}

@@ -1,0 +1,1 @@
+{"camera":{"dest":[0.0,0.0,0.0],"origin":[0.0,16.0,16.0],"up":[0.0,0.0,1.0]},"objects":[{"alpha":2.0,"bvh_type":"faces","matcap":"","max_alpha":16.0,"path":"../data/hex_torus.obj"}]}

@@ -1,0 +1,59 @@
+{
+  "objects": [
+    {
+      "name": "bunny1",
+      "meshes": [
+        {
+          "path": "../data/bunny10.obj",
+          "bvh_type": "faces"
+        }
+      ],
+      "alpha": 200,
+      "is_dynamic": true,
+      "init_state": {
+        "position": [-0.1,-3.5,0],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]],
+        "velocity": [0.1,3.5,0],
+        "angular_velocity": [0,0,0]
+      }
+    },
+    {
+      "name": "bunny2",
+      "meshes": [
+        {
+          "path": "../data/bunny10.obj",
+          "bvh_type": "faces"
+        }
+      ],
+      "alpha": 200,
+      "is_dynamic": true,
+      "init_state": {
+        "position": [0.1,3.5,0],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]],
+        "velocity": [-0.1,-3.5,0],
+        "angular_velocity": [0,0,0]
+      }
+    },
+    {
+      "name": "plane",
+      "meshes": [
+        {
+          "path": "../data/paper.obj",
+          "bvh_type": "faces"
+        }
+      ],
+      "alpha": 200,
+      "is_dynamic": false,
+      "init_state": {
+        "position": [0,0,0],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]]
+      }
+    }
+  ],
+  "gravity": [0,0,-1],
+  "timestep": 0.0025,
+  "num_steps": 1200,
+  "beta": 0.5,
+  "use_exact_dist": false,
+  "name": "bunny_bunny_plane"
+}

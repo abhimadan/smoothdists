@@ -1,0 +1,1 @@
+{"camera":{"dest":[0.0,-4.530614852905273,0.0],"origin":[0.0,10.0,10.0],"up":[0.0,1.0,0.0]},"objects":[{"alpha":50.0,"bvh_type":"edges","matcap":"../blue_matcap.png","max_alpha":50.0,"path":"../data/bowl_edges.obj"}]}

@@ -1,0 +1,59 @@
+{
+  "objects": [
+    {
+      "name": "sphere1",
+      "meshes": [
+        {
+          "path": "../data/sphere.obj",
+          "bvh_type": "points"
+        }
+      ],
+      "alpha": 20,
+      "is_dynamic": true,
+      "init_state": {
+        "position": [2,0,0.2],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]],
+        "velocity": [-4,0,0],
+        "angular_velocity": [0,0,0]
+      }
+    },
+    {
+      "name": "sphere2",
+      "meshes": [
+        {
+          "path": "../data/sphere.obj",
+          "bvh_type": "points"
+        }
+      ],
+      "alpha": 20,
+      "is_dynamic": true,
+      "init_state": {
+        "position": [-2,0,0.2],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]],
+        "velocity": [4,0,0],
+        "angular_velocity": [0,0,0]
+      }
+    },
+    {
+      "name": "plane",
+      "meshes": [
+        {
+          "path": "../data/plane.obj",
+          "bvh_type": "faces"
+        }
+      ],
+      "alpha": 200,
+      "is_dynamic": false,
+      "init_state": {
+        "position": [0,0,0],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]]
+      }
+    }
+  ],
+  "gravity": [0,0,0],
+  "timestep": 0.01,
+  "num_steps": 50,
+  "beta": 0.5,
+  "use_exact_dist": false,
+  "name": "sphere_sphere"
+}

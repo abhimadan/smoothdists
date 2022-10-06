@@ -1,0 +1,42 @@
+{
+  "objects": [
+    {
+      "name": "ringtoss",
+      "meshes": [
+        {
+          "path": "../data/ringtoss.obj",
+          "bvh_type": "points"
+        }
+      ],
+      "alpha": 20,
+      "is_dynamic": false,
+      "init_state": {
+        "position": [0,0,0],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]]
+      }
+    },
+    {
+      "name": "trefoil",
+      "meshes": [
+        {
+          "path": "../data/trefoil_edges.obj",
+          "bvh_type": "edges"
+        }
+      ],
+      "alpha": 20,
+      "is_dynamic": true,
+      "init_state": {
+        "position": [-9.6,5,-9.6],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]],
+        "velocity": [6,0,6],
+        "angular_velocity": [0,0.8,0]
+      }
+    }
+  ],
+  "gravity": [0,-1,0],
+  "timestep": 0.005,
+  "num_steps": 1000,
+  "beta": 0.5,
+  "use_exact_dist": false,
+  "name": "trefoil_ringtoss"
+}

@@ -1,0 +1,46 @@
+{
+  "objects": [
+    {
+      "name": "bowl2d",
+      "meshes": [
+        {
+          "path": "../data/bowl2d.obj",
+          "bvh_type": "edges"
+        }
+      ],
+      "alpha": 20,
+      "max_alpha": 40,
+      "is_dynamic": false,
+      "init_state": {
+        "position": [0,0,0],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]]
+      }
+    },
+    {
+      "name": "point",
+      "meshes": [
+        {
+          "data": {
+            "points": [[0,0,0]],
+            "faces": []
+          },
+          "bvh_type": "points"
+        }
+      ],
+      "alpha": 20,
+      "is_dynamic": true,
+      "init_state": {
+        "position": [-0.55,0.5,0],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]],
+        "velocity": [0,-1,0],
+        "angular_velocity": [0,0,0]
+      }
+    }
+  ],
+  "gravity": [0,-1,0],
+  "timestep": 0.01,
+  "num_steps": 300,
+  "beta": 0.5,
+  "use_exact_dist": false,
+  "name": "point_bowl2d"
+}

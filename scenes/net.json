@@ -1,0 +1,1 @@
+{"camera":{"dest":[0.0,0.0,0.0],"origin":[0.0,3.0,3.0],"up":[0.0,0.0,-1.0]},"objects":[{"alpha":50.0,"bvh_type":"edges","matcap":"","max_alpha":1,"path":"../data/net.obj"}]}

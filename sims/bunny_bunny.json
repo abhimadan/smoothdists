@@ -1,0 +1,42 @@
+{
+  "objects": [
+    {
+      "name": "bunny1",
+      "meshes": [
+        {
+          "path": "../data/bunny10.obj",
+          "bvh_type": "faces"
+        }
+      ],
+      "alpha": 200,
+      "is_dynamic": false,
+      "init_state": {
+        "position": [0,0,0],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]]
+      }
+    },
+    {
+      "name": "bunny2",
+      "meshes": [
+        {
+          "path": "../data/bunny10.obj",
+          "bvh_type": "faces"
+        }
+      ],
+      "alpha": 200,
+      "is_dynamic": true,
+      "init_state": {
+        "position": [-0.4,3,0],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]],
+        "velocity": [0.6984,-5.4886,0.5104],
+        "angular_velocity": [1,1,0]
+      }
+    }
+  ],
+  "gravity": [0,0,0],
+  "timestep": 0.005,
+  "num_steps": 120,
+  "beta": 0.5,
+  "use_exact_dist": false,
+  "name": "bunny_bunny"
+}

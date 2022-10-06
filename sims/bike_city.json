@@ -1,0 +1,42 @@
+{
+  "objects": [
+    {
+      "name": "city",
+      "meshes": [
+        {
+          "path": "../data/city2.obj",
+          "bvh_type": "points"
+        }
+      ],
+      "alpha": 50,
+      "is_dynamic": false,
+      "init_state": {
+        "position": [0,0,0],
+        "rotation": [[1,0,0],[0,1,0],[0,0,1]]
+      }
+    },
+    {
+      "name": "bike",
+      "meshes": [
+        {
+          "path": "../data/bike_scaled2.obj",
+          "bvh_type": "faces"
+        }
+      ],
+      "alpha": 100,
+      "is_dynamic": true,
+      "init_state": {
+        "position": [6,-25,3],
+        "rotation": [[0.224951054,0.974370065,0.000000000],[-0.974370065,0.224951054,0.000000000],[0.000000000,0.000000000,1.000000000]],
+        "velocity": [-2,6,-2],
+        "angular_velocity": [1,0,0]
+      }
+    }
+  ],
+  "gravity": [0,0,-1],
+  "timestep": 0.01,
+  "num_steps": 1000,
+  "beta": 0.5,
+  "use_exact_dist": false,
+  "name": "bike_city"
+}
