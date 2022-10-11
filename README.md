@@ -17,6 +17,9 @@ cmake ..
 make
 ```
 
+To download the data, please see the `v1.0.0` release on GitHub and follow the
+instructions there.
+
 ## Running
 
 Aside from the static libraries for CPU and GPU code, there are also a few
