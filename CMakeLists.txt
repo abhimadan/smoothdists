@@ -12,7 +12,11 @@ option(LIBIGL_OPENGL              "Use OpenGL"         ON)
 option(LIBIGL_GLFW                "Use GLFW"           ON)
 option(LIBIGL_IMGUI               "Use ImGui"          ON)
 option(LIBIGL_PNG                 "Use PNG"            ON)
-option(LIBIGL_RESTRICTED_MATLAB   "Use Matlab"         ON)
+
+find_package(Matlab COMPONENTS MEX_COMPILER MX_LIBRARY ENG_LIBRARY MAT_LIBRARY)
+if(Matlab_FOUND)
+  option(LIBIGL_RESTRICTED_MATLAB   "Use Matlab"         ON)
+endif()
 
 #find_package(LIBIGL REQUIRED QUIET)
 include(libigl)
