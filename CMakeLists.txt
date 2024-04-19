@@ -18,6 +18,10 @@ if(Matlab_FOUND)
   option(LIBIGL_RESTRICTED_MATLAB   "Use Matlab"         ON)
 endif()
 
+include(FetchContent)
+
+include(pybind11)
+
 #find_package(LIBIGL REQUIRED QUIET)
 include(libigl)
 
@@ -42,6 +46,9 @@ target_link_libraries(barnes_hut_smoothness_test smooth_dist_cpu igl::core igl::
 
 add_executable(rigid_body_simulator app/rigid_body_simulator.cpp)
 target_link_libraries(rigid_body_simulator smooth_dist_cpu igl::core igl::opengl igl::glfw igl::imgui igl::png)
+
+pybind11_add_module(smoothdists_bindings plugin/smoothdists_bindings.cpp)
+target_link_libraries(smoothdists_bindings PUBLIC smooth_dist_cpu igl::core igl::opengl igl::glfw igl::imgui igl::png)
 
 # mex compilation
 if(Matlab_FOUND)
