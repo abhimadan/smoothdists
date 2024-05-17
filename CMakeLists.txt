@@ -5,6 +5,8 @@ project(smooth_distance LANGUAGES CXX)
 
 set(CMAKE_BUILD_TYPE Release)
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 # libigl
