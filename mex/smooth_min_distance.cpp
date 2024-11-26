@@ -18,7 +18,6 @@
 #include "smooth_dist.h"
 #include "bvh.h"
 #include "vector.h"
-#include "quadrature.h"
 #include "smooth_dist_mesh.h"
 
 void mexFunction(

@@ -17,7 +17,6 @@
 #include "smooth_dist.h"
 #include "bvh.h"
 #include "vector.h"
-#include "quadrature.h"
 
 #define NUM_THREADS 4
 
